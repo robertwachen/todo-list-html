@@ -1,4 +1,4 @@
-# CS279 Problem Set 1
+# HTML To-Do List
 
 
 # How to Run The Todo List
