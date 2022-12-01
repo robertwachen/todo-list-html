@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<!-- Boilerplate todo-list app code taken from CodingNepal - www.codingnepalweb.com -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App | CS279 Problem Set 1</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head>
+<body>
+  <div class="wrapper">
+    <header>To-Do List</header>
+    <div class="inputField">
+      <input type="text" placeholder="Add your new todo">
+      <button><i class="fas fa-plus"></i></button>
+    </div>
+    <ul class="todoList">
+      <!-- Data comes from local storage -->
+    </ul>
+    <div class="footer">
+      <span class="upcomingTasks"></span>
+      <button>Clear All</button>
+    </div>
+  </div>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+  <script>
+    $(document).on('click', '.todotext', function() {
+      console.log($(this).text())
+        if ($(this).css('text-decoration-line') === "")
+            $(this).css('text-decoration-line', 'line-through');
+        else
+            $(this).css('text-decoration-line', "");
+    });    
+  </script>
+
+  <script src="./script.js"></script>
+
+</body>
+</html>
